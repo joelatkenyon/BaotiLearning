@@ -1,0 +1,15 @@
+<h1>Courses</h1>
+
+<ul>
+  <% @courses.each do |course| %>
+
+    <li>
+      <a href="<%= course_path(course) %>">
+        <%= course.title %> <%= course.description %> <%= course.price %>
+      </a>
+    </li>
+
+  <% end %>
+</ul>
+
+<%= link_to "New Course", new_course_path %>
