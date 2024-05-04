@@ -1,24 +1,82 @@
-<h1>BUCKETS LIST</h1>
 
-<%= button_to "Create Bucket", new_bucket_path, method: :get %>
-
-<h3>Empty Buckets</h3>
-<ul>
-<% @empty_buckets.each do |bucket| %>
-    <li><%= link_to bucket.name, bucket_path(bucket) %></li>
-<% end %>
-</ul>
-
-<h3>Pending Buckets</h3>
-<ul>
-<% @pending_buckets.each do |bucket| %>
-    <li><%= link_to bucket.name, bucket_path(bucket) %></li>
-<% end %>
-</ul>
-
-<h3>Completed Buckets</h3>
-<ul>
-<% @completed_buckets.each do |bucket| %>
-    <li><%= link_to bucket.name, bucket_path(bucket) %></li>
-<% end %>
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subjects List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    h3 {
+      margin-top: 30px;
+      color: #666;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>SUBJECTS LIST</h1>
+    <%= button_to "Create Subject", new_bucket_path, method: :get %>
+    
+    <h3>Empty Subjcets</h3>
+    <ul>
+      <% @empty_buckets.each do |bucket| %>
+          <li><%= link_to bucket.name, bucket_path(bucket) %></li>
+      <% end %>
+    </ul>
+    
+    <h3>Pending Subjects</h3>
+    <ul>
+      <% @pending_buckets.each do |bucket| %>
+          <li><%= link_to bucket.name, bucket_path(bucket) %></li>
+      <% end %>
+    </ul>
+    
+    <h3>Completed Subjects</h3>
+    <ul>
+      <% @completed_buckets.each do |bucket| %>
+          <li><%= link_to bucket.name, bucket_path(bucket) %></li>
+      <% end %>
+    </ul>
+  </div>
+</body>
+</html>
