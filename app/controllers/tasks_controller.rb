@@ -1,43 +1,44 @@
-class BucketsController < ApplicationController
+
+class TasksController < ApplicationController
     def index
-        @empty_buckets = Bucket.get_by_status("Empty")
-        @pending_buckets = Bucket.get_by_status("Pending")
-        @completed_buckets = Bucket.get_by_status("Completed")
+        @pending_tasks = Task.get_by_status("Pending")
+        @completed_tasks = Task.get_by_status("Completed")
     end
 
     def new
-        @bucket = Bucket.new
+        @task = Task.new
     end
 
     def create
-        @bucket = Bucket.create(bucket_params(:name, :description))
-        @bucket.status = "Empty"
-        @bucket.save
-        redirect_to bucket_path(@bucket)
+        @task = Task.create(task_params(:name, :description, :bucket_id))
+        @task.status = "Pending"
+        @task.save
+        @task.bucket.update_status
+        redirect_to task_path(@task)
     end
 
     def show
-        @bucket = Bucket.find(params[:id])
+        @task = Task.find(params[:id])
     end
 
     def edit
-        @bucket = Bucket.find(params[:id])
+        @task = Task.find(params[:id])
     end
 
     def update
-        @bucket = Bucket.find(params[:id])
-        @bucket.update(bucket_params(:name, :description))
-        @bucket.update_status
-        redirect_to bucket_path(@bucket)
+        @task = Task.find(params[:id])
+        @task.update(task_params(:name, :description, :status, :bucket_id))
+        @bucket = @task.bucket.update_status
+        redirect_to task_path(@task)
     end
 
     def destroy
-        @bucket = Bucket.find(params[:id]).destroy
-        redirect_to buckets_path
+        @task = Task.find(params[:id]).destroy
+        redirect_to tasks_path
     end
 
     private
-    def bucket_params(*args)
-        params.require(:bucket).permit(*args)
+    def task_params(*args)
+        params.require(:task).permit(*args)
     end
 end
