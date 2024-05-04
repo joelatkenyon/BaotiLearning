@@ -1,0 +1,111 @@
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/ubuntu/COMP318/lab-3-baoti-learning-ibraheem/BaotiLearning/config/environment.rb:5)
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/ubuntu/COMP318/lab-3-baoti-learning-ibraheem/BaotiLearning/config/environment.rb:5)
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/ubuntu/COMP318/lab-3-baoti-learning-ibraheem/BaotiLearning/config/environment.rb:5)
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/ubuntu/COMP318/lab-3-baoti-learning-ibraheem/BaotiLearning/config/environment.rb:5)
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 
+Started GET "/" for 138.28.156.57 at 2024-05-04 02:23:39 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by CoursesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT `courses`.* FROM `courses`[0m
+  ↳ app/views/courses/index.html.erb:4
+  Rendered courses/index.html.erb within layouts/application (Duration: 42.7ms | Allocations: 13002)
+  Rendered layout layouts/application.html.erb (Duration: 67.9ms | Allocations: 19181)
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 1.6ms | Allocations: 25464)
+
+
+  
+ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10: 	<%= javascript_include_tag "turbo", type: "module" %>
+    11:   </head>
+    12: 	<div class="container-flouid">
+  
+app/views/layouts/application.html.erb:9
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/ubuntu/COMP318/lab-3-baoti-learning-ibraheem/BaotiLearning/config/environment.rb:5)
+Started GET "/" for 138.28.156.57 at 2024-05-04 02:26:55 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by CoursesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT `courses`.* FROM `courses`[0m
+  ↳ app/views/courses/index.html.erb:4
+  Rendered courses/index.html.erb within layouts/application (Duration: 24.9ms | Allocations: 12929)
+  Rendered layout layouts/application.html.erb (Duration: 35.2ms | Allocations: 18458)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 1.5ms | Allocations: 25738)
+
+
+  
+ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10: 	<%= javascript_include_tag "turbo", type: "module" %>
+    11:   </head>
+    12: 	<div class="container-flouid">
+  
+app/views/layouts/application.html.erb:9
+Started GET "/" for 138.28.156.57 at 2024-05-04 02:26:58 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CoursesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT `courses`.* FROM `courses`[0m
+  ↳ app/views/courses/index.html.erb:4
+  Rendered courses/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 561)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 4831)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.3ms | Allocations: 5062)
+
+
+  
+ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10: 	<%= javascript_include_tag "turbo", type: "module" %>
+    11:   </head>
+    12: 	<div class="container-flouid">
+  
+app/views/layouts/application.html.erb:9
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/ubuntu/COMP318/lab-3-baoti-learning-ibraheem/BaotiLearning/config/environment.rb:5)
+Started GET "/" for 138.28.156.57 at 2024-05-04 15:37:42 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by CoursesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (11.5ms)[0m  [1m[34mSELECT `courses`.* FROM `courses`[0m
+  ↳ app/views/courses/index.html.erb:4
+  Rendered courses/index.html.erb within layouts/application (Duration: 45.5ms | Allocations: 12925)
+  Rendered layout layouts/application.html.erb (Duration: 55.6ms | Allocations: 16238)
+Completed 500 Internal Server Error in 101ms (ActiveRecord: 22.9ms | Allocations: 23116)
+
+
+  
+ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10: 	<%= javascript_include_tag "turbo", type: "module" %>
+    11:   </head>
+    12: 	<div class="container-flouid">
+  
+app/views/layouts/application.html.erb:9
