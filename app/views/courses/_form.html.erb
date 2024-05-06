@@ -3,9 +3,10 @@
     <%= form.label :title %><br>
     <%= form.text_field :title %>
     <% course.errors.full_messages_for(:title).each do |message| %>
-    <div><%= message %></div>
+      <div><%= message %></div>
     <% end %>
   </div>
+
   <div>
     <%= form.label :description %><br>
     <%= form.text_area :description %>
@@ -13,28 +14,31 @@
       <div><%= message %></div>
     <% end %>
   </div>
-  <div>    <%= form.label :price %><br>
+
+  <div>
+    <%= form.label :price %><br>
     <%= form.number_field :price %>
     <% course.errors.full_messages_for(:price).each do |message| %>
       <div><%= message %></div>
     <% end %>    
-    
-   </div>
-   <div>    <%= form.label :start_date %><br>
+  </div>
+
+  <div>
+    <%= form.label :start_date %><br>
     <%= form.datetime_local_field :start_date %>
     <% course.errors.full_messages_for(:start_date).each do |message| %>
       <div><%= message %></div>
     <% end %>    
-    
-   </div>
-   <div>    <%= form.label :end_date %><br>
+  </div>
+
+  <div>
+    <%= form.label :end_date %><br>
     <%= form.datetime_local_field :end_date %>
     <% course.errors.full_messages_for(:end_date).each do |message| %>
       <div><%= message %></div>
     <% end %>    
-    
-   </div>
-
+  </div>
+  
   <div>
     <%= form.submit %>
   </div>

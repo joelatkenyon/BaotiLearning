@@ -15,4 +15,5 @@ Rails.application.routes.draw do
 
   root "courses#index"
   resources :courses
+  get 'courses/:id/enroll', to: 'courses#enroll', as: :enroll
 end
