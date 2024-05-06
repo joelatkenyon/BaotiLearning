@@ -23,12 +23,9 @@
 			  <li class="nav-item">
 				<a class="nav-link active" aria-current="page" href="/courses">Courses</a>
 			  </li>
-
 			  <li class="nav-item">
 				<a class="nav-link active" aria-current="page" href="/courses/new">New Course</a>
 			  </li>
-	
-	
 			</ul>
       <form class="">
         <% if !user_signed_in? %>
@@ -47,11 +44,11 @@
   <body>
 	  <div class="container">
 		<%= yield %>
+		<% flash.each do |type, msg| %>
+		  <div>
+			<%= msg %>
+		  </div>
+		<% end %>
 	  </div>
-	  <% flash.each do |type, msg| %>
-		<div>
-		  <%= msg %>
-		</div>
-	  <% end %>
   </body>
 </html>

@@ -1,11 +1,17 @@
-<p>Course: <%= @course.title %> <%= @course.description %> <%= @course.price %></p>
+<h1><%= @course.title %></h1>
+<p><%= @course.description %></p>
+<p>Price: <%= @course.price %></p>
 
 <ul>
-  <li><%= link_to "Edit", edit_course_path(@course) %></li>
+  <% if current_user != nil && @course.check_user_role(current_user) == nil %>
+    <li><%= link_to "Enroll", enroll_path(@course)%></li>
+  <% end %>
+  <% if @course.check_user_role(current_user) == "instructor" %>
+    <li><%= link_to "Edit", edit_course_path(@course) %></li>
 
-  <li><%= link_to "Destroy", course_path(@course), data: {
-                    turbo_method: :delete,
-                    turbo_confirm: "Are you sure?"
-                  } %></li>
-                  
+    <li><%= link_to "Destroy", course_path(@course), data: {
+                      turbo_method: :delete,
+                      turbo_confirm: "Are you sure?"
+                    } %></li>
+  <% end %>
 </ul>
