@@ -19,7 +19,7 @@ class CoursesController < ApplicationController
         @course = Course.new(course_params)
         if @course.save
             @course.add_user(current_user, "instructor")
-            redirect_to @course
+            redirect_to course_path(@course)
         else
             render :new, status: :unprocessable_entity
         end
@@ -32,7 +32,7 @@ class CoursesController < ApplicationController
     def update
         @course = Course.find(params[:id])
         if @course.update(course_params)
-            redirect_to @course
+            redirect_to course_path(@course)
         else
             render :edit, status: :unprocessable_entity
         end
@@ -47,7 +47,7 @@ class CoursesController < ApplicationController
     def enroll
         @course = Course.find(params[:id])
         @course.add_user(current_user, "student")
-        redirect_to @course
+        redirect_to course_path(@course)
     end
 
     private
@@ -59,7 +59,7 @@ class CoursesController < ApplicationController
             @course = Course.find(params[:id])
             unless @course.check_user_role(current_user) == "instructor"
                 flash[:error] = "You must be an instructor of this course to continue."
-                redirect_to @course
+                redirect_to course_path(@course)
             end
         end
 
@@ -67,7 +67,7 @@ class CoursesController < ApplicationController
             @course = Course.find(params[:id])
             unless @course.check_user_role(current_user) == nil
                 flash[:error] = "You are already enrolled in this course."
-                redirect_to @course
+                redirect_to course_path(@course)
             end
         end
 end

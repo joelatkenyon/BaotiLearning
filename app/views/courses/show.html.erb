@@ -2,10 +2,36 @@
 <p><%= @course.description %></p>
 <p>Price: <%= @course.price %></p>
 
+<% current_user_role = @course.check_user_role(current_user) %>
+<% unless current_user_role == nil %>
+  <% if @course.sections.any? %>
+    <h2>Sections</h2>
+  <% end %>
+  <% @course.sections.each do |section| %>
+    <h4>
+      <%= section.title %>
+    </h4>
+  <% end %>
+
+  <% if current_user_role == "instructor" %>
+    <h2>Add a section:</h2>
+    <%= form_with model: [ @course, @course.sections.build ] do |form| %>
+      <p>
+        <%= form.label :title %><br>
+        <%= form.text_field :title %>
+      </p>
+      <p>
+        <%= form.submit %>
+      </p>
+    <% end %>
+  <% end %>
+<% end %>
+
 <ul>
-  <% if current_user != nil && @course.check_user_role(current_user) == nil %>
+  <% if current_user != nil && current_user_role == nil %>
     <li><%= link_to "Enroll", enroll_path(@course)%></li>
   <% end %>
+
   <% if @course.check_user_role(current_user) == "instructor" %>
     <li><%= link_to "Edit", edit_course_path(@course) %></li>
 
