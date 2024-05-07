@@ -49,6 +49,7 @@
 	</div>
 <%= link_to "All Subjects", buckets_path%>
 <%= link_to "All Tasks", tasks_path%>
+<p>Your current balance: $<%= current_user.balance %></p>
 <%= yield %>
 
 </html>
