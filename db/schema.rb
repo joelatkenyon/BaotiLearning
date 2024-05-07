@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_05_01_142835) do
+ActiveRecord::Schema[7.1].define(version: 2024_05_06_232849) do
+  create_table "buckets", charset: "utf8mb4", collation: "utf8mb4_general_ci", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.string "status"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "courses", charset: "utf8mb4", collation: "utf8mb4_general_ci", force: :cascade do |t|
     t.string "title"
     t.text "description"
@@ -31,6 +39,24 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_01_142835) do
     t.index ["user_id"], name: "index_enrollments_on_user_id"
   end
 
+  create_table "sections", charset: "utf8mb4", collation: "utf8mb4_general_ci", force: :cascade do |t|
+    t.string "title"
+    t.bigint "course_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["course_id"], name: "index_sections_on_course_id"
+  end
+
+  create_table "tasks", charset: "utf8mb4", collation: "utf8mb4_general_ci", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.string "status"
+    t.bigint "bucket_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["bucket_id"], name: "index_tasks_on_bucket_id"
+  end
+
   create_table "users", charset: "utf8mb4", collation: "utf8mb4_general_ci", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -43,4 +69,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_01_142835) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "sections", "courses"
+  add_foreign_key "tasks", "buckets"
 end
