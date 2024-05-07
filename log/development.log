@@ -1197,3 +1197,394 @@ Migrating to Users (20240507161644)
   [1m[36mActiveRecord::SchemaMigration Create (1.9ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20240507161644')[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('4970686224851430615')[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/ubuntu/COMP318/lab-3-baoti-learning-ibraheem/BaotiLearning/config/environment.rb:5)
+Started GET "/" for 138.28.156.57 at 2024-05-07 16:34:31 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by CoursesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT `courses`.* FROM `courses`[0m
+  ↳ app/views/courses/index.html.erb:4
+  Rendered courses/index.html.erb within layouts/application (Duration: 54.7ms | Allocations: 13309)
+  Rendered layout layouts/application.html.erb (Duration: 192.3ms | Allocations: 35415)
+Completed 200 OK in 211ms (Views: 194.6ms | ActiveRecord: 1.5ms | Allocations: 43325)
+
+
+Started GET "/courses/new" for 138.28.156.57 at 2024-05-07 16:34:32 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CoursesController#new as HTML
+Completed 401 Unauthorized in 13ms (ActiveRecord: 0.0ms | Allocations: 2130)
+
+
+Started GET "/users/sign_in" for 138.28.156.57 at 2024-05-07 16:34:33 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/ubuntu/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/ubuntu/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 560)
+  Rendered /home/ubuntu/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 12.0ms | Allocations: 2820)
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 5440)
+Completed 200 OK in 38ms (Views: 19.1ms | ActiveRecord: 1.4ms | Allocations: 15850)
+
+
+Started GET "/courses/13" for 138.28.156.57 at 2024-05-07 16:34:34 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT `courses`.* FROM `courses` WHERE `courses`.`id` = 13 LIMIT 1[0m
+  ↳ app/controllers/courses_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courses/show.html.erb within layouts/application
+  Rendered courses/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 837)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 3384)
+Completed 200 OK in 11ms (Views: 6.0ms | ActiveRecord: 0.3ms | Allocations: 5945)
+
+
+Started GET "/buckets" for 138.28.156.57 at 2024-05-07 16:34:38 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BucketsController#index as HTML
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  [1m[36mCACHE Bucket Load (0.0ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  [1m[36mCACHE Bucket Load (0.0ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  Rendering layout layouts/application.html.erb
+  Rendering buckets/index.html.erb within layouts/application
+  Rendered buckets/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 480)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 3296)
+Completed 200 OK in 22ms (Views: 6.5ms | ActiveRecord: 1.2ms | Allocations: 10523)
+
+
+Started GET "/courses/14" for 138.28.156.57 at 2024-05-07 16:34:40 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT `courses`.* FROM `courses` WHERE `courses`.`id` = 14 LIMIT 1[0m
+  ↳ app/controllers/courses_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courses/show.html.erb within layouts/application
+  Rendered courses/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 295)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 2842)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.3ms | Allocations: 3490)
+
+
+Started GET "/tasks" for 138.28.156.57 at 2024-05-07 16:34:43 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/models/task.rb:5:in `get_by_status'
+  [1m[36mCACHE Task Load (0.0ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/models/task.rb:5:in `get_by_status'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 385)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 3198)
+Completed 200 OK in 22ms (Views: 6.4ms | ActiveRecord: 1.4ms | Allocations: 9532)
+
+
+Started GET "/courses/new" for 138.28.156.57 at 2024-05-07 16:34:43 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CoursesController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 278)
+
+
+Started GET "/users/sign_in" for 138.28.156.57 at 2024-05-07 16:34:43 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/ubuntu/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/ubuntu/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 111)
+  Rendered /home/ubuntu/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 889)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 3497)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 4089)
+
+
+Started GET "/courses/16" for 138.28.156.57 at 2024-05-07 16:34:44 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT `courses`.* FROM `courses` WHERE `courses`.`id` = 16 LIMIT 1[0m
+  ↳ app/controllers/courses_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courses/show.html.erb within layouts/application
+  Rendered courses/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 311)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 2858)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.3ms | Allocations: 3507)
+
+
+Started GET "/courses/15" for 138.28.156.57 at 2024-05-07 16:34:44 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT `courses`.* FROM `courses` WHERE `courses`.`id` = 15 LIMIT 1[0m
+  ↳ app/controllers/courses_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courses/show.html.erb within layouts/application
+  Rendered courses/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 333)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 2881)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.3ms | Allocations: 3527)
+
+
+Started GET "/courses/15" for 138.28.156.57 at 2024-05-07 16:34:47 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT `courses`.* FROM `courses` WHERE `courses`.`id` = 15 LIMIT 1[0m
+  ↳ app/controllers/courses_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courses/show.html.erb within layouts/application
+  Rendered courses/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 306)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 2853)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.3ms | Allocations: 3502)
+
+
+Started GET "/courses/16" for 138.28.156.57 at 2024-05-07 16:34:48 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT `courses`.* FROM `courses` WHERE `courses`.`id` = 16 LIMIT 1[0m
+  ↳ app/controllers/courses_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courses/show.html.erb within layouts/application
+  Rendered courses/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 323)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 2870)
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.3ms | Allocations: 3516)
+
+
+Started GET "/courses/new" for 138.28.156.57 at 2024-05-07 16:34:49 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CoursesController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 299)
+
+
+Started GET "/users/sign_in" for 138.28.156.57 at 2024-05-07 16:34:49 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/ubuntu/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/ubuntu/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 111)
+  Rendered /home/ubuntu/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 889)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 3430)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 4031)
+
+
+Started GET "/courses/16" for 138.28.156.57 at 2024-05-07 16:34:51 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT `courses`.* FROM `courses` WHERE `courses`.`id` = 16 LIMIT 1[0m
+  ↳ app/controllers/courses_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courses/show.html.erb within layouts/application
+  Rendered courses/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 332)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 2879)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.3ms | Allocations: 3524)
+
+
+Started GET "/courses/15" for 138.28.156.57 at 2024-05-07 16:34:51 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT `courses`.* FROM `courses` WHERE `courses`.`id` = 15 LIMIT 1[0m
+  ↳ app/controllers/courses_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courses/show.html.erb within layouts/application
+  Rendered courses/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 336)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 2883)
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.3ms | Allocations: 3528)
+
+
+Started GET "/courses/16" for 138.28.156.57 at 2024-05-07 16:34:51 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT `courses`.* FROM `courses` WHERE `courses`.`id` = 16 LIMIT 1[0m
+  ↳ app/controllers/courses_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courses/show.html.erb within layouts/application
+  Rendered courses/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 311)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 2858)
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.3ms | Allocations: 3503)
+
+
+Started GET "/courses/16" for 138.28.156.57 at 2024-05-07 16:34:53 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT `courses`.* FROM `courses` WHERE `courses`.`id` = 16 LIMIT 1[0m
+  ↳ app/controllers/courses_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courses/show.html.erb within layouts/application
+  Rendered courses/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 341)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 2888)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.3ms | Allocations: 3533)
+
+
+Started GET "/courses/13" for 138.28.156.57 at 2024-05-07 16:34:54 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT `courses`.* FROM `courses` WHERE `courses`.`id` = 13 LIMIT 1[0m
+  ↳ app/controllers/courses_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courses/show.html.erb within layouts/application
+  Rendered courses/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 326)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 2873)
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.3ms | Allocations: 3519)
+
+
+Started GET "/courses/13" for 138.28.156.57 at 2024-05-07 16:34:56 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT `courses`.* FROM `courses` WHERE `courses`.`id` = 13 LIMIT 1[0m
+  ↳ app/controllers/courses_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courses/show.html.erb within layouts/application
+  Rendered courses/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 329)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 2943)
+Completed 200 OK in 19ms (Views: 5.0ms | ActiveRecord: 0.3ms | Allocations: 3590)
+
+
+Started GET "/courses/14" for 138.28.156.57 at 2024-05-07 16:34:57 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT `courses`.* FROM `courses` WHERE `courses`.`id` = 14 LIMIT 1[0m
+  ↳ app/controllers/courses_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courses/show.html.erb within layouts/application
+  Rendered courses/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 319)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 2923)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.3ms | Allocations: 3568)
+
+
+Started GET "/courses/14" for 138.28.156.57 at 2024-05-07 16:34:58 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT `courses`.* FROM `courses` WHERE `courses`.`id` = 14 LIMIT 1[0m
+  ↳ app/controllers/courses_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courses/show.html.erb within layouts/application
+  Rendered courses/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 346)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 2893)
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 0.3ms | Allocations: 3540)
+
+
+Started GET "/courses/15" for 138.28.156.57 at 2024-05-07 16:35:00 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT `courses`.* FROM `courses` WHERE `courses`.`id` = 15 LIMIT 1[0m
+  ↳ app/controllers/courses_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courses/show.html.erb within layouts/application
+  Rendered courses/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 336)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 2884)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.3ms | Allocations: 3529)
+
+
+Started GET "/courses/15" for 138.28.156.57 at 2024-05-07 16:35:01 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT `courses`.* FROM `courses` WHERE `courses`.`id` = 15 LIMIT 1[0m
+  ↳ app/controllers/courses_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courses/show.html.erb within layouts/application
+  Rendered courses/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 330)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 2877)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.3ms | Allocations: 3522)
+
+
+Started GET "/courses/14" for 138.28.156.57 at 2024-05-07 16:35:08 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT `courses`.* FROM `courses` WHERE `courses`.`id` = 14 LIMIT 1[0m
+  ↳ app/controllers/courses_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courses/show.html.erb within layouts/application
+  Rendered courses/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 340)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 2887)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.3ms | Allocations: 3532)
+
+
+Started GET "/courses" for 138.28.156.57 at 2024-05-07 16:35:08 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CoursesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT `courses`.* FROM `courses`[0m
+  ↳ app/views/courses/index.html.erb:4
+  Rendered courses/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 876)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 3414)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.3ms | Allocations: 3656)
+
+
+Started GET "/courses/new" for 138.28.156.57 at 2024-05-07 16:35:09 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CoursesController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started GET "/users/sign_in" for 138.28.156.57 at 2024-05-07 16:35:09 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/ubuntu/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/ubuntu/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 111)
+  Rendered /home/ubuntu/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 889)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 3430)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 4048)
+
+
+Started GET "/courses/new" for 138.28.156.57 at 2024-05-07 16:35:11 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CoursesController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 311)
+
+
+Started GET "/users/sign_in" for 138.28.156.57 at 2024-05-07 16:35:11 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/ubuntu/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/ubuntu/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 111)
+  Rendered /home/ubuntu/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 889)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 3430)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 4043)
+
+
+Started GET "/courses" for 138.28.156.57 at 2024-05-07 16:35:12 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CoursesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT `courses`.* FROM `courses`[0m
+  ↳ app/views/courses/index.html.erb:4
+  Rendered courses/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 846)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 3384)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.3ms | Allocations: 3626)
+
+
+Started GET "/courses/new" for 138.28.156.57 at 2024-05-07 16:35:12 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CoursesController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started GET "/users/sign_in" for 138.28.156.57 at 2024-05-07 16:35:12 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/ubuntu/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/ubuntu/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 111)
+  Rendered /home/ubuntu/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 889)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 3430)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 4023)
+
+
