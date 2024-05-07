@@ -1,43 +1,70 @@
-<h1><%= @course.title %></h1>
-<p><%= @course.description %></p>
-<p>Price: <%= @course.price %></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= @course.title %></title>
+  <style>
+    h1 {
+      text-align: center;
+    }
+    .description-box {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    .section {
+      text-align: center;
+    }
+    .section-line {
+      border-top: 1px solid #000;
+    }
+  </style>
+</head>
+<body>
+  <h1><%= @course.title %></h1>
+  <div class="description-box">
+    <h2>Description</h2>
+    <p><%= @course.description %></p>
+    <p>Price: <%= @course.price %></p>
+  </div>
 
-<% current_user_role = @course.check_user_role(current_user) %>
-<% unless current_user_role == nil %>
-  <% if @course.sections.any? %>
-    <h2>Sections</h2>
-  <% end %>
-  <% @course.sections.each do |section| %>
-    <h4>
-      <%= section.title %>
-    </h4>
-  <% end %>
-
-  <% if current_user_role == "instructor" %>
-    <h2>Add a section:</h2>
-    <%= form_with model: [ @course, @course.sections.build ] do |form| %>
-      <p>
-        <%= form.label :title %><br>
-        <%= form.text_field :title %>
-      </p>
-      <p>
-        <%= form.submit %>
-      </p>
+  <h2>Add Section</h2>
+  <% unless current_user_role == nil %>
+    <% if @course.sections.any? %>
+      <h2>Sections</h2>
+      <% @course.sections.each do |section| %>
+        <div class="section">
+          <h4><%= section.title %></h4>
+        </div>
+        <div class="section-line"></div>
+      <% end %>
+    <% end %>
+    <% if current_user_role == "instructor" %>
+      <%= form_with model: [ @course, @course.sections.build ] do |form| %>
+        <p>
+          <%= form.label :title %><br>
+          <%= form.text_field :title %>
+        </p>
+        <p>
+          <%= form.submit %>
+        </p>
+      <% end %>
     <% end %>
   <% end %>
-<% end %>
 
-<ul>
-  <% if current_user != nil && current_user_role == nil %>
-    <li><%= link_to "Enroll", enroll_path(@course)%></li>
-  <% end %>
+  <ul>
+    <% if current_user != nil && current_user_role == nil %>
+      <li><%= link_to "Enroll", enroll_path(@course)%></li>
+    <% end %>
 
-  <% if @course.check_user_role(current_user) == "instructor" %>
-    <li><%= link_to "Edit", edit_course_path(@course) %></li>
+    <% if @course.check_user_role(current_user) == "instructor" %>
+      <li><%= link_to "Edit", edit_course_path(@course) %></li>
 
-    <li><%= link_to "Destroy", course_path(@course), data: {
-                      turbo_method: :delete,
-                      turbo_confirm: "Are you sure?"
-                    } %></li>
-  <% end %>
-</ul>
+      <li><%= link_to "Destroy", course_path(@course), data: {
+                        turbo_method: :delete,
+                        turbo_confirm: "Are you sure?"
+                      } %></li>
+    <% end %>
+  </ul>
+</body>
+</html>
