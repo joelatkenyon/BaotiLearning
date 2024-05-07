@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'payments/purchase_course'
   resources :tasks
   resources :buckets
   devise_for :users
