@@ -1,0 +1,1199 @@
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/ubuntu/COMP318/lab-3-baoti-learning-ibraheem/BaotiLearning/config/environment.rb:5)
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/ubuntu/COMP318/lab-3-baoti-learning-ibraheem/BaotiLearning/config/environment.rb:5)
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/ubuntu/COMP318/lab-3-baoti-learning-ibraheem/BaotiLearning/config/environment.rb:5)
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/ubuntu/COMP318/lab-3-baoti-learning-ibraheem/BaotiLearning/config/environment.rb:5)
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 
+Started GET "/" for 138.28.156.57 at 2024-05-04 02:23:39 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by CoursesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT `courses`.* FROM `courses`[0m
+  ↳ app/views/courses/index.html.erb:4
+  Rendered courses/index.html.erb within layouts/application (Duration: 42.7ms | Allocations: 13002)
+  Rendered layout layouts/application.html.erb (Duration: 67.9ms | Allocations: 19181)
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 1.6ms | Allocations: 25464)
+
+
+  
+ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10: 	<%= javascript_include_tag "turbo", type: "module" %>
+    11:   </head>
+    12: 	<div class="container-flouid">
+  
+app/views/layouts/application.html.erb:9
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/ubuntu/COMP318/lab-3-baoti-learning-ibraheem/BaotiLearning/config/environment.rb:5)
+Started GET "/" for 138.28.156.57 at 2024-05-04 02:26:55 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by CoursesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT `courses`.* FROM `courses`[0m
+  ↳ app/views/courses/index.html.erb:4
+  Rendered courses/index.html.erb within layouts/application (Duration: 24.9ms | Allocations: 12929)
+  Rendered layout layouts/application.html.erb (Duration: 35.2ms | Allocations: 18458)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 1.5ms | Allocations: 25738)
+
+
+  
+ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10: 	<%= javascript_include_tag "turbo", type: "module" %>
+    11:   </head>
+    12: 	<div class="container-flouid">
+  
+app/views/layouts/application.html.erb:9
+Started GET "/" for 138.28.156.57 at 2024-05-04 02:26:58 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CoursesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT `courses`.* FROM `courses`[0m
+  ↳ app/views/courses/index.html.erb:4
+  Rendered courses/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 561)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 4831)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.3ms | Allocations: 5062)
+
+
+  
+ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10: 	<%= javascript_include_tag "turbo", type: "module" %>
+    11:   </head>
+    12: 	<div class="container-flouid">
+  
+app/views/layouts/application.html.erb:9
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/ubuntu/COMP318/lab-3-baoti-learning-ibraheem/BaotiLearning/config/environment.rb:5)
+Started GET "/" for 138.28.156.57 at 2024-05-04 15:37:42 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by CoursesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (11.5ms)[0m  [1m[34mSELECT `courses`.* FROM `courses`[0m
+  ↳ app/views/courses/index.html.erb:4
+  Rendered courses/index.html.erb within layouts/application (Duration: 45.5ms | Allocations: 12925)
+  Rendered layout layouts/application.html.erb (Duration: 55.6ms | Allocations: 16238)
+Completed 500 Internal Server Error in 101ms (ActiveRecord: 22.9ms | Allocations: 23116)
+
+
+  
+ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10: 	<%= javascript_include_tag "turbo", type: "module" %>
+    11:   </head>
+    12: 	<div class="container-flouid">
+  
+app/views/layouts/application.html.erb:9
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/ubuntu/COMP318/lab-3-baoti-learning-ibraheem/BaotiLearning/config/environment.rb:5)
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/ubuntu/COMP318/lab-3-baoti-learning-ibraheem/BaotiLearning/config/environment.rb:5)
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/ubuntu/COMP318/lab-3-baoti-learning-ibraheem/BaotiLearning/config/environment.rb:5)
+Started GET "/" for 138.28.156.57 at 2024-05-04 16:07:48 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate
+
+You have 2 pending migrations:
+
+db/migrate/20240504154257_create_buckets.rb
+db/migrate/20240504154304_create_tasks.rb
+
+
+):
+  
+activerecord (7.1.3.2) lib/active_record/migration.rb:755:in `check_pending_migrations'
+activerecord (7.1.3.2) lib/active_record/migration.rb:644:in `block (2 levels) in call'
+activesupport (7.1.3.2) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.1.3.2) lib/active_record/migration.rb:649:in `block in call'
+activerecord (7.1.3.2) lib/active_record/migration.rb:641:in `synchronize'
+activerecord (7.1.3.2) lib/active_record/migration.rb:641:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.3.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.3.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.3.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.10) lib/rack/method_override.rb:28:in `call'
+rack (3.0.10) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.10) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.3.2) lib/rails/engine.rb:536:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/ubuntu/COMP318/lab-3-baoti-learning-ibraheem/BaotiLearning/config/environment.rb:5)
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/ubuntu/COMP318/lab-3-baoti-learning-ibraheem/BaotiLearning/config/environment.rb:5)
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 
+Started GET "/" for 138.28.156.57 at 2024-05-04 16:50:46 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by CoursesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT `courses`.* FROM `courses`[0m
+  ↳ app/views/courses/index.html.erb:4
+  Rendered courses/index.html.erb within layouts/application (Duration: 24.6ms | Allocations: 12928)
+  Rendered layout layouts/application.html.erb (Duration: 96.3ms | Allocations: 36053)
+Completed 200 OK in 106ms (Views: 96.5ms | ActiveRecord: 1.5ms | Allocations: 40461)
+
+
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 
+Started GET "/buckets" for 138.28.156.57 at 2024-05-04 16:50:49 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BucketsController#index as HTML
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  [1m[36mCACHE Bucket Load (0.0ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  [1m[36mCACHE Bucket Load (0.0ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  Rendering layout layouts/application.html.erb
+  Rendering buckets/index.html.erb within layouts/application
+  Rendered buckets/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 402)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 3194)
+Completed 200 OK in 22ms (Views: 6.8ms | ActiveRecord: 1.2ms | Allocations: 10317)
+
+
+Started GET "/tasks" for 138.28.156.57 at 2024-05-04 16:50:49 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+Zeitwerk::NameError (expected file /home/ubuntu/COMP318/lab-3-baoti-learning-ibraheem/BaotiLearning/app/controllers/tasks_controller.rb to define constant TasksController, but didn't):
+  
+zeitwerk (2.6.13) lib/zeitwerk/loader/callbacks.rb:33:in `on_file_autoloaded'
+zeitwerk (2.6.13) lib/zeitwerk/kernel.rb:27:in `require'
+activesupport (7.1.3.2) lib/active_support/inflector/methods.rb:290:in `const_get'
+activesupport (7.1.3.2) lib/active_support/inflector/methods.rb:290:in `constantize'
+activesupport (7.1.3.2) lib/active_support/core_ext/string/inflections.rb:74:in `constantize'
+actionpack (7.1.3.2) lib/action_dispatch/http/request.rb:90:in `controller_class_for'
+actionpack (7.1.3.2) lib/action_dispatch/request/utils.rb:100:in `action_encoding_template'
+actionpack (7.1.3.2) lib/action_dispatch/request/utils.rb:85:in `encode'
+actionpack (7.1.3.2) lib/action_dispatch/request/utils.rb:45:in `set_binary_encoding'
+actionpack (7.1.3.2) lib/action_dispatch/http/parameters.rb:68:in `path_parameters='
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:882:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (3.0.10) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.0.10) lib/rack/etag.rb:29:in `call'
+rack (3.0.10) lib/rack/conditional_get.rb:31:in `call'
+rack (3.0.10) lib/rack/head.rb:15:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.3.2) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.3.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.3.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.3.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.10) lib/rack/method_override.rb:28:in `call'
+rack (3.0.10) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.10) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.3.2) lib/rails/engine.rb:536:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/ubuntu/COMP318/lab-3-baoti-learning-ibraheem/BaotiLearning/config/environment.rb:5)
+Started GET "/" for 138.28.156.57 at 2024-05-04 16:53:02 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by CoursesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT `courses`.* FROM `courses`[0m
+  ↳ app/views/courses/index.html.erb:4
+  Rendered courses/index.html.erb within layouts/application (Duration: 24.2ms | Allocations: 12929)
+  Rendered layout layouts/application.html.erb (Duration: 94.1ms | Allocations: 35985)
+Completed 200 OK in 109ms (Views: 96.2ms | ActiveRecord: 1.6ms | Allocations: 42918)
+
+
+Started GET "/buckets" for 138.28.156.57 at 2024-05-04 16:53:04 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BucketsController#index as HTML
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  [1m[36mCACHE Bucket Load (0.0ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  [1m[36mCACHE Bucket Load (0.0ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  Rendering layout layouts/application.html.erb
+  Rendering buckets/index.html.erb within layouts/application
+  Rendered buckets/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 406)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 3220)
+Completed 200 OK in 23ms (Views: 7.2ms | ActiveRecord: 1.3ms | Allocations: 10373)
+
+
+Started GET "/tasks" for 138.28.156.57 at 2024-05-04 16:53:04 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/models/task.rb:5:in `get_by_status'
+  [1m[36mCACHE Task Load (0.0ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/models/task.rb:5:in `get_by_status'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 295)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 3091)
+Completed 200 OK in 29ms (Views: 18.7ms | ActiveRecord: 0.3ms | Allocations: 5621)
+
+
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/ubuntu/COMP318/lab-3-baoti-learning-ibraheem/BaotiLearning/config/environment.rb:5)
+Started GET "/" for 138.28.156.57 at 2024-05-04 16:57:44 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by CoursesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT `courses`.* FROM `courses`[0m
+  ↳ app/views/courses/index.html.erb:4
+  Rendered courses/index.html.erb within layouts/application (Duration: 25.8ms | Allocations: 12933)
+  Rendered layout layouts/application.html.erb (Duration: 100.8ms | Allocations: 35847)
+Completed 200 OK in 117ms (Views: 103.2ms | ActiveRecord: 1.6ms | Allocations: 42780)
+
+
+Started GET "/tasks" for 138.28.156.57 at 2024-05-04 16:57:45 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/models/task.rb:5:in `get_by_status'
+  [1m[36mCACHE Task Load (0.0ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/models/task.rb:5:in `get_by_status'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 314)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 3106)
+Completed 200 OK in 13ms (Views: 6.4ms | ActiveRecord: 0.3ms | Allocations: 5682)
+
+
+Started GET "/courses" for 138.28.156.57 at 2024-05-04 16:57:58 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CoursesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT `courses`.* FROM `courses`[0m
+  ↳ app/views/courses/index.html.erb:4
+  Rendered courses/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 560)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 3318)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.3ms | Allocations: 3569)
+
+
+Started GET "/courses/new" for 138.28.156.57 at 2024-05-04 16:58:00 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CoursesController#new as HTML
+Completed 401 Unauthorized in 9ms (ActiveRecord: 0.0ms | Allocations: 1606)
+
+
+Started GET "/users/sign_in" for 138.28.156.57 at 2024-05-04 16:58:00 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/ubuntu/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/ubuntu/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 560)
+  Rendered /home/ubuntu/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 16.2ms | Allocations: 3139)
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 5826)
+Completed 200 OK in 69ms (Views: 22.9ms | ActiveRecord: 1.3ms | Allocations: 15309)
+
+
+Started GET "/tasks" for 138.28.156.57 at 2024-05-04 16:58:01 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/models/task.rb:5:in `get_by_status'
+  [1m[36mCACHE Task Load (0.0ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/models/task.rb:5:in `get_by_status'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 53)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 2816)
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.3ms | Allocations: 3907)
+
+
+Started GET "/buckets" for 138.28.156.57 at 2024-05-04 16:58:07 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BucketsController#index as HTML
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  [1m[36mCACHE Bucket Load (0.0ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  [1m[36mCACHE Bucket Load (0.0ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  Rendering layout layouts/application.html.erb
+  Rendering buckets/index.html.erb within layouts/application
+  Rendered buckets/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 385)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 3177)
+Completed 200 OK in 20ms (Views: 6.1ms | ActiveRecord: 1.2ms | Allocations: 10254)
+
+
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/ubuntu/COMP318/lab-3-baoti-learning-ibraheem/BaotiLearning/config/environment.rb:5)
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/ubuntu/COMP318/lab-3-baoti-learning-ibraheem/BaotiLearning/config/environment.rb:5)
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/ubuntu/COMP318/lab-3-baoti-learning-ibraheem/BaotiLearning/config/environment.rb:5)
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/ubuntu/COMP318/lab-3-baoti-learning-ibraheem/BaotiLearning/config/environment.rb:5)
+Started GET "/" for 138.28.156.57 at 2024-05-04 17:37:57 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by CoursesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT `courses`.* FROM `courses`[0m
+  ↳ app/views/courses/index.html.erb:4
+  Rendered courses/index.html.erb within layouts/application (Duration: 24.4ms | Allocations: 12929)
+  Rendered layout layouts/application.html.erb (Duration: 95.5ms | Allocations: 35889)
+Completed 200 OK in 111ms (Views: 97.8ms | ActiveRecord: 1.5ms | Allocations: 42822)
+
+
+Started GET "/courses/13" for 138.28.156.57 at 2024-05-04 17:37:58 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT `courses`.* FROM `courses` WHERE `courses`.`id` = 13 LIMIT 1[0m
+  ↳ app/controllers/courses_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courses/show.html.erb within layouts/application
+  Rendered courses/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 274)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 3037)
+Completed 200 OK in 11ms (Views: 6.3ms | ActiveRecord: 0.3ms | Allocations: 5604)
+
+
+Started GET "/courses/14" for 138.28.156.57 at 2024-05-04 17:37:58 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT `courses`.* FROM `courses` WHERE `courses`.`id` = 14 LIMIT 1[0m
+  ↳ app/controllers/courses_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering courses/show.html.erb within layouts/application
+  Rendered courses/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 85)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 2874)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.3ms | Allocations: 3533)
+
+
+Started GET "/tasks" for 138.28.156.57 at 2024-05-04 17:37:59 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/models/task.rb:5:in `get_by_status'
+  [1m[36mCACHE Task Load (0.0ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/models/task.rb:5:in `get_by_status'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 312)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 3092)
+Completed 200 OK in 16ms (Views: 6.2ms | ActiveRecord: 0.3ms | Allocations: 5666)
+
+
+Started GET "/buckets" for 138.28.156.57 at 2024-05-04 17:38:01 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BucketsController#index as HTML
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  [1m[36mCACHE Bucket Load (0.0ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  [1m[36mCACHE Bucket Load (0.0ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  Rendering layout layouts/application.html.erb
+  Rendering buckets/index.html.erb within layouts/application
+  Rendered buckets/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 385)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 3166)
+Completed 200 OK in 33ms (Views: 19.5ms | ActiveRecord: 1.3ms | Allocations: 10278)
+
+
+Started GET "/tasks" for 138.28.156.57 at 2024-05-04 17:38:02 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/models/task.rb:5:in `get_by_status'
+  [1m[36mCACHE Task Load (0.0ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/models/task.rb:5:in `get_by_status'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 53)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 2873)
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 0.3ms | Allocations: 3951)
+
+
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 
+Started GET "/tasks" for 138.28.156.57 at 2024-05-04 17:38:16 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/models/task.rb:5:in `get_by_status'
+  [1m[36mCACHE Task Load (0.0ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/models/task.rb:5:in `get_by_status'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 53)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 2839)
+Completed 200 OK in 8ms (Views: 5.1ms | ActiveRecord: 0.3ms | Allocations: 3914)
+
+
+Started GET "/buckets" for 138.28.156.57 at 2024-05-04 17:38:17 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BucketsController#index as HTML
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  [1m[36mCACHE Bucket Load (0.0ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  [1m[36mCACHE Bucket Load (0.0ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  Rendering layout layouts/application.html.erb
+  Rendering buckets/index.html.erb within layouts/application
+  Rendered buckets/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 75)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 2859)
+Completed 200 OK in 24ms (Views: 16.0ms | ActiveRecord: 0.3ms | Allocations: 4375)
+
+
+Started GET "/buckets/1" for 138.28.156.57 at 2024-05-04 17:38:18 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BucketsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBucket Load (1.0ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets` WHERE `buckets`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/buckets_controller.rb:20:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering buckets/show.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`bucket_id` = 1[0m
+  ↳ app/models/bucket.rb:23:in `tasks_by_status'
+  Rendered buckets/show.html.erb within layouts/application (Duration: 26.4ms | Allocations: 4027)
+  Rendered layout layouts/application.html.erb (Duration: 34.7ms | Allocations: 6860)
+Completed 200 OK in 43ms (Views: 34.0ms | ActiveRecord: 2.3ms | Allocations: 8208)
+
+
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/ubuntu/COMP318/lab-3-baoti-learning-ibraheem/BaotiLearning/config/environment.rb:5)
+Started GET "/" for 138.28.156.57 at 2024-05-04 19:04:11 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by CoursesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT `courses`.* FROM `courses`[0m
+  ↳ app/views/courses/index.html.erb:4
+  Rendered courses/index.html.erb within layouts/application (Duration: 23.6ms | Allocations: 12933)
+  Rendered layout layouts/application.html.erb (Duration: 91.4ms | Allocations: 35881)
+Completed 200 OK in 106ms (Views: 93.5ms | ActiveRecord: 1.5ms | Allocations: 42814)
+
+
+Started GET "/tasks" for 138.28.156.57 at 2024-05-04 19:04:12 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/models/task.rb:5:in `get_by_status'
+  [1m[36mCACHE Task Load (0.0ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/models/task.rb:5:in `get_by_status'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 375)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 3171)
+Completed 200 OK in 11ms (Views: 5.8ms | ActiveRecord: 0.3ms | Allocations: 5747)
+
+
+Started GET "/buckets" for 138.28.156.57 at 2024-05-04 19:04:16 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BucketsController#index as HTML
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  [1m[36mCACHE Bucket Load (0.0ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  [1m[36mCACHE Bucket Load (0.0ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  Rendering layout layouts/application.html.erb
+  Rendering buckets/index.html.erb within layouts/application
+  Rendered buckets/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 446)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 3223)
+Completed 200 OK in 19ms (Views: 6.2ms | ActiveRecord: 1.2ms | Allocations: 10330)
+
+
+Started GET "/tasks" for 138.28.156.57 at 2024-05-04 19:04:17 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/models/task.rb:5:in `get_by_status'
+  [1m[36mCACHE Task Load (0.0ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/models/task.rb:5:in `get_by_status'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 53)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 2819)
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.3ms | Allocations: 3904)
+
+
+Started GET "/buckets" for 138.28.156.57 at 2024-05-04 19:04:18 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BucketsController#index as HTML
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  [1m[36mCACHE Bucket Load (0.0ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  [1m[36mCACHE Bucket Load (0.0ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  Rendering layout layouts/application.html.erb
+  Rendering buckets/index.html.erb within layouts/application
+  Rendered buckets/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 75)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 2932)
+Completed 200 OK in 9ms (Views: 5.4ms | ActiveRecord: 0.3ms | Allocations: 4462)
+
+
+Started GET "/tasks" for 138.28.156.57 at 2024-05-04 19:04:18 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/models/task.rb:5:in `get_by_status'
+  [1m[36mCACHE Task Load (0.0ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/models/task.rb:5:in `get_by_status'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 53)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 2903)
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.3ms | Allocations: 3980)
+
+
+Started GET "/buckets" for 138.28.156.57 at 2024-05-04 19:04:19 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BucketsController#index as HTML
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  [1m[36mCACHE Bucket Load (0.0ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  [1m[36mCACHE Bucket Load (0.0ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  Rendering layout layouts/application.html.erb
+  Rendering buckets/index.html.erb within layouts/application
+  Rendered buckets/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 75)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 2871)
+Completed 200 OK in 9ms (Views: 4.9ms | ActiveRecord: 0.3ms | Allocations: 4387)
+
+
+Started GET "/tasks" for 138.28.156.57 at 2024-05-04 19:04:21 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/models/task.rb:5:in `get_by_status'
+  [1m[36mCACHE Task Load (0.0ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/models/task.rb:5:in `get_by_status'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 53)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 2835)
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 0.3ms | Allocations: 3909)
+
+
+Started GET "/tasks/new" for 138.28.156.57 at 2024-05-04 19:04:23 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TasksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  [1m[36mBucket Load (0.4ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets` ORDER BY `buckets`.`name` ASC[0m
+  ↳ app/views/tasks/new.html.erb:9
+  Rendered tasks/new.html.erb within layouts/application (Duration: 54.9ms | Allocations: 15669)
+  Rendered layout layouts/application.html.erb (Duration: 58.8ms | Allocations: 18315)
+Completed 200 OK in 83ms (Views: 59.1ms | ActiveRecord: 1.5ms | Allocations: 22414)
+
+
+Started GET "/buckets" for 138.28.156.57 at 2024-05-04 19:04:30 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BucketsController#index as HTML
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  [1m[36mCACHE Bucket Load (0.0ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  [1m[36mCACHE Bucket Load (0.0ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  Rendering layout layouts/application.html.erb
+  Rendering buckets/index.html.erb within layouts/application
+  Rendered buckets/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 75)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 2866)
+Completed 200 OK in 9ms (Views: 5.3ms | ActiveRecord: 0.3ms | Allocations: 4386)
+
+
+Started GET "/buckets/1" for 138.28.156.57 at 2024-05-04 19:04:36 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BucketsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets` WHERE `buckets`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/buckets_controller.rb:20:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering buckets/show.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`bucket_id` = 1[0m
+  ↳ app/models/bucket.rb:23:in `tasks_by_status'
+  Rendered buckets/show.html.erb within layouts/application (Duration: 6.4ms | Allocations: 3690)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 6458)
+Completed 200 OK in 15ms (Views: 10.8ms | ActiveRecord: 0.6ms | Allocations: 8984)
+
+
+Started GET "/buckets/1/edit" for 138.28.156.57 at 2024-05-04 19:04:37 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BucketsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets` WHERE `buckets`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/buckets_controller.rb:24:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering buckets/edit.html.erb within layouts/application
+  Rendered buckets/edit.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1284)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 3859)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.3ms | Allocations: 4571)
+
+
+Started PATCH "/buckets/1" for 138.28.156.57 at 2024-05-04 19:04:38 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BucketsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bucket"=>{"name"=>"dwcsa", "description"=>"cec"}, "commit"=>"Update Bucket", "id"=>"1"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets` WHERE `buckets`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/buckets_controller.rb:28:in `update'
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`bucket_id` = 1[0m
+  ↳ app/models/bucket.rb:12:in `update_status'
+Redirected to http://3.128.33.157:3000/buckets/1
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms | Allocations: 2072)
+
+
+Started GET "/buckets/1" for 138.28.156.57 at 2024-05-04 19:04:38 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BucketsController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mBucket Load (0.2ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets` WHERE `buckets`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/buckets_controller.rb:20:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering buckets/show.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`bucket_id` = 1[0m
+  ↳ app/models/bucket.rb:23:in `tasks_by_status'
+  Rendered buckets/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 618)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 3422)
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.4ms | Allocations: 4111)
+
+
+Started GET "/buckets/1/edit" for 138.28.156.57 at 2024-05-04 19:04:39 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BucketsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets` WHERE `buckets`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/buckets_controller.rb:24:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering buckets/edit.html.erb within layouts/application
+  Rendered buckets/edit.html.erb within layouts/application (Duration: 10.5ms | Allocations: 916)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 3558)
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.3ms | Allocations: 4202)
+
+
+Started DELETE "/buckets/1" for 138.28.156.57 at 2024-05-04 19:04:41 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BucketsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"1"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets` WHERE `buckets`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/buckets_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/buckets_controller.rb:35:in `destroy'
+  [1m[36mBucket Destroy (4.0ms)[0m  [1m[31mDELETE FROM `buckets` WHERE `buckets`.`id` = 1[0m
+  ↳ app/controllers/buckets_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/buckets_controller.rb:35:in `destroy'
+Redirected to http://3.128.33.157:3000/buckets
+Completed 302 Found in 10ms (ActiveRecord: 5.2ms | Allocations: 2125)
+
+
+Started GET "/buckets" for 138.28.156.57 at 2024-05-04 19:04:42 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BucketsController#index as TURBO_STREAM
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  [1m[36mCACHE Bucket Load (0.0ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  [1m[36mCACHE Bucket Load (0.0ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  Rendering layout layouts/application.html.erb
+  Rendering buckets/index.html.erb within layouts/application
+  Rendered buckets/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 53)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 2885)
+Completed 200 OK in 9ms (Views: 5.7ms | ActiveRecord: 0.3ms | Allocations: 4351)
+
+
+Started GET "/buckets/new" for 138.28.156.57 at 2024-05-04 19:04:45 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BucketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering buckets/new.html.erb within layouts/application
+  Rendered buckets/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 975)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 3555)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 3879)
+
+
+Started POST "/buckets" for 138.28.156.57 at 2024-05-04 19:04:59 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BucketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bucket"=>{"name"=>"Phyiscs", "description"=>"Content related to Physics"}, "commit"=>"Create Bucket"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/buckets_controller.rb:13:in `create'
+  [1m[36mBucket Create (1.5ms)[0m  [1m[32mINSERT INTO `buckets` (`name`, `description`, `status`, `created_at`, `updated_at`) VALUES ('Phyiscs', 'Content related to Physics', NULL, '2024-05-04 19:04:59.824637', '2024-05-04 19:04:59.824637')[0m
+  ↳ app/controllers/buckets_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/buckets_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/buckets_controller.rb:15:in `create'
+  [1m[36mBucket Update (0.3ms)[0m  [1m[33mUPDATE `buckets` SET `buckets`.`status` = 'Empty', `buckets`.`updated_at` = '2024-05-04 19:04:59.829645' WHERE `buckets`.`id` = 2[0m
+  ↳ app/controllers/buckets_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/buckets_controller.rb:15:in `create'
+Redirected to http://3.128.33.157:3000/buckets/2
+Completed 302 Found in 11ms (ActiveRecord: 3.7ms | Allocations: 4933)
+
+
+Started GET "/buckets/2" for 138.28.156.57 at 2024-05-04 19:04:59 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BucketsController#show as TURBO_STREAM
+  Parameters: {"id"=>"2"}
+  [1m[36mBucket Load (0.2ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets` WHERE `buckets`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/buckets_controller.rb:20:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering buckets/show.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`bucket_id` = 2[0m
+  ↳ app/models/bucket.rb:23:in `tasks_by_status'
+  Rendered buckets/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 620)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 3403)
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.5ms | Allocations: 4048)
+
+
+Started GET "/buckets" for 138.28.156.57 at 2024-05-04 19:05:01 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BucketsController#index as HTML
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  [1m[36mCACHE Bucket Load (0.0ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  [1m[36mCACHE Bucket Load (0.0ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  Rendering layout layouts/application.html.erb
+  Rendering buckets/index.html.erb within layouts/application
+  Rendered buckets/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 75)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 2853)
+Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 0.3ms | Allocations: 4370)
+
+
+Started GET "/buckets/new" for 138.28.156.57 at 2024-05-04 19:05:04 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BucketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering buckets/new.html.erb within layouts/application
+  Rendered buckets/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 765)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 3411)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 3660)
+
+
+Started POST "/buckets" for 138.28.156.57 at 2024-05-04 19:05:23 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BucketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bucket"=>{"name"=>"Chemistry", "description"=>"Content related to Chemistry"}, "commit"=>"Create Bucket"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/buckets_controller.rb:13:in `create'
+  [1m[36mBucket Create (1.7ms)[0m  [1m[32mINSERT INTO `buckets` (`name`, `description`, `status`, `created_at`, `updated_at`) VALUES ('Chemistry', 'Content related to Chemistry', NULL, '2024-05-04 19:05:23.861337', '2024-05-04 19:05:23.861337')[0m
+  ↳ app/controllers/buckets_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/buckets_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/buckets_controller.rb:15:in `create'
+  [1m[36mBucket Update (0.3ms)[0m  [1m[33mUPDATE `buckets` SET `buckets`.`status` = 'Empty', `buckets`.`updated_at` = '2024-05-04 19:05:23.867559' WHERE `buckets`.`id` = 3[0m
+  ↳ app/controllers/buckets_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/buckets_controller.rb:15:in `create'
+Redirected to http://3.128.33.157:3000/buckets/3
+Completed 302 Found in 12ms (ActiveRecord: 4.4ms | Allocations: 3461)
+
+
+Started GET "/buckets/3" for 138.28.156.57 at 2024-05-04 19:05:23 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BucketsController#show as TURBO_STREAM
+  Parameters: {"id"=>"3"}
+  [1m[36mBucket Load (0.2ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets` WHERE `buckets`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/buckets_controller.rb:20:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering buckets/show.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`bucket_id` = 3[0m
+  ↳ app/models/bucket.rb:23:in `tasks_by_status'
+  Rendered buckets/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 620)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 3448)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.4ms | Allocations: 4095)
+
+
+Started GET "/buckets" for 138.28.156.57 at 2024-05-04 19:05:25 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BucketsController#index as HTML
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  [1m[36mCACHE Bucket Load (0.0ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  [1m[36mCACHE Bucket Load (0.0ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  Rendering layout layouts/application.html.erb
+  Rendering buckets/index.html.erb within layouts/application
+  Rendered buckets/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 2873)
+Completed 200 OK in 9ms (Views: 5.7ms | ActiveRecord: 0.3ms | Allocations: 4418)
+
+
+Started GET "/buckets/2" for 138.28.156.57 at 2024-05-04 19:05:28 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BucketsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets` WHERE `buckets`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/buckets_controller.rb:20:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering buckets/show.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`bucket_id` = 2[0m
+  ↳ app/models/bucket.rb:23:in `tasks_by_status'
+  Rendered buckets/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 620)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 3388)
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.5ms | Allocations: 4031)
+
+
+Started GET "/buckets/2/edit" for 138.28.156.57 at 2024-05-04 19:05:29 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BucketsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets` WHERE `buckets`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/buckets_controller.rb:24:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering buckets/edit.html.erb within layouts/application
+  Rendered buckets/edit.html.erb within layouts/application (Duration: 1.9ms | Allocations: 920)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 3495)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.3ms | Allocations: 4137)
+
+
+Started PATCH "/buckets/2" for 138.28.156.57 at 2024-05-04 19:05:35 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BucketsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bucket"=>{"name"=>"Physics", "description"=>"Content related to Physics"}, "commit"=>"Update Bucket", "id"=>"2"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets` WHERE `buckets`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/buckets_controller.rb:28:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/buckets_controller.rb:29:in `update'
+  [1m[36mBucket Update (0.3ms)[0m  [1m[33mUPDATE `buckets` SET `buckets`.`name` = 'Physics', `buckets`.`updated_at` = '2024-05-04 19:05:35.140601' WHERE `buckets`.`id` = 2[0m
+  ↳ app/controllers/buckets_controller.rb:29:in `update'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/buckets_controller.rb:29:in `update'
+  [1m[36mTask Load (4.5ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`bucket_id` = 2[0m
+  ↳ app/models/bucket.rb:12:in `update_status'
+Redirected to http://3.128.33.157:3000/buckets/2
+Completed 302 Found in 13ms (ActiveRecord: 6.0ms | Allocations: 3021)
+
+
+Started GET "/buckets/2" for 138.28.156.57 at 2024-05-04 19:05:35 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BucketsController#show as TURBO_STREAM
+  Parameters: {"id"=>"2"}
+  [1m[36mBucket Load (0.2ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets` WHERE `buckets`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/buckets_controller.rb:20:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering buckets/show.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`bucket_id` = 2[0m
+  ↳ app/models/bucket.rb:23:in `tasks_by_status'
+  Rendered buckets/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 620)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 3440)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.4ms | Allocations: 4087)
+
+
+Started GET "/buckets/2/edit" for 138.28.156.57 at 2024-05-04 19:05:43 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BucketsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBucket Load (0.4ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets` WHERE `buckets`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/buckets_controller.rb:24:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering buckets/edit.html.erb within layouts/application
+  Rendered buckets/edit.html.erb within layouts/application (Duration: 1.9ms | Allocations: 929)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 3521)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.3ms | Allocations: 4165)
+
+
+Started GET "/buckets" for 138.28.156.57 at 2024-05-04 19:05:52 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BucketsController#index as HTML
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  [1m[36mCACHE Bucket Load (0.0ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  [1m[36mCACHE Bucket Load (0.0ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  Rendering layout layouts/application.html.erb
+  Rendering buckets/index.html.erb within layouts/application
+  Rendered buckets/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 2897)
+Completed 200 OK in 8ms (Views: 5.1ms | ActiveRecord: 0.4ms | Allocations: 4442)
+
+
+Started GET "/buckets/2" for 138.28.156.57 at 2024-05-04 19:05:54 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BucketsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets` WHERE `buckets`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/buckets_controller.rb:20:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering buckets/show.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`bucket_id` = 2[0m
+  ↳ app/models/bucket.rb:23:in `tasks_by_status'
+  Rendered buckets/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 620)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 3382)
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.5ms | Allocations: 4025)
+
+
+Started GET "/buckets/3" for 138.28.156.57 at 2024-05-04 19:06:08 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BucketsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets` WHERE `buckets`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/buckets_controller.rb:20:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering buckets/show.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`bucket_id` = 3[0m
+  ↳ app/models/bucket.rb:23:in `tasks_by_status'
+  Rendered buckets/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 619)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 3384)
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.6ms | Allocations: 4026)
+
+
+Started GET "/tasks" for 138.28.156.57 at 2024-05-04 19:06:11 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/models/task.rb:5:in `get_by_status'
+  [1m[36mCACHE Task Load (0.0ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/models/task.rb:5:in `get_by_status'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 53)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 2810)
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.3ms | Allocations: 3885)
+
+
+Started GET "/tasks/new" for 138.28.156.57 at 2024-05-04 19:06:12 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TasksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets` ORDER BY `buckets`.`name` ASC[0m
+  ↳ app/views/tasks/new.html.erb:9
+  Rendered tasks/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1519)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 4165)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.3ms | Allocations: 4415)
+
+
+Started POST "/tasks" for 138.28.156.57 at 2024-05-04 19:06:22 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TasksController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"name"=>"Question1", "description"=>"this is question 1", "bucket_id"=>"3"}, "commit"=>"Create Task"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:13:in `create'
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets` WHERE `buckets`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/tasks_controller.rb:13:in `create'
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO `tasks` (`name`, `description`, `status`, `bucket_id`, `created_at`, `updated_at`) VALUES ('Question1', 'this is question 1', NULL, 3, '2024-05-04 19:06:22.478630', '2024-05-04 19:06:22.478630')[0m
+  ↳ app/controllers/tasks_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:15:in `create'
+  [1m[36mTask Update (0.2ms)[0m  [1m[33mUPDATE `tasks` SET `tasks`.`status` = 'Pending', `tasks`.`updated_at` = '2024-05-04 19:06:22.482269' WHERE `tasks`.`id` = 1[0m
+  ↳ app/controllers/tasks_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:15:in `create'
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`bucket_id` = 3[0m
+  ↳ app/models/bucket.rb:12:in `update_status'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/bucket.rb:19:in `update_status'
+  [1m[36mBucket Update (0.2ms)[0m  [1m[33mUPDATE `buckets` SET `buckets`.`status` = 'Pending', `buckets`.`updated_at` = '2024-05-04 19:06:22.489335' WHERE `buckets`.`id` = 3[0m
+  ↳ app/models/bucket.rb:19:in `update_status'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/bucket.rb:19:in `update_status'
+Redirected to http://3.128.33.157:3000/tasks/1
+Completed 302 Found in 36ms (ActiveRecord: 5.1ms | Allocations: 20267)
+
+
+Started GET "/tasks/1" for 138.28.156.57 at 2024-05-04 19:06:22 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TasksController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/tasks_controller.rb:21:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  [1m[36mBucket Load (0.2ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets` WHERE `buckets`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/tasks/show.html.erb:5
+  Rendered tasks/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 791)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 3608)
+Completed 200 OK in 10ms (Views: 6.8ms | ActiveRecord: 0.4ms | Allocations: 4937)
+
+
+Started GET "/buckets" for 138.28.156.57 at 2024-05-04 19:06:23 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BucketsController#index as HTML
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  [1m[36mCACHE Bucket Load (0.0ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  [1m[36mCACHE Bucket Load (0.0ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  Rendering layout layouts/application.html.erb
+  Rendering buckets/index.html.erb within layouts/application
+  Rendered buckets/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 2866)
+Completed 200 OK in 9ms (Views: 5.5ms | ActiveRecord: 0.3ms | Allocations: 4411)
+
+
+Started GET "/buckets" for 138.28.156.57 at 2024-05-04 19:06:24 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BucketsController#index as HTML
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  [1m[36mCACHE Bucket Load (0.0ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  [1m[36mCACHE Bucket Load (0.0ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets`[0m
+  ↳ app/models/bucket.rb:6:in `get_by_status'
+  Rendering layout layouts/application.html.erb
+  Rendering buckets/index.html.erb within layouts/application
+  Rendered buckets/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 2881)
+Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 0.3ms | Allocations: 4423)
+
+
+Started GET "/buckets/3" for 138.28.156.57 at 2024-05-04 19:06:25 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BucketsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets` WHERE `buckets`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/buckets_controller.rb:20:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering buckets/show.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`bucket_id` = 3[0m
+  ↳ app/models/bucket.rb:23:in `tasks_by_status'
+  Rendered buckets/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 666)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 3516)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.6ms | Allocations: 4159)
+
+
+Started GET "/tasks/1" for 138.28.156.57 at 2024-05-04 19:06:27 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/tasks_controller.rb:21:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  [1m[36mBucket Load (0.2ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets` WHERE `buckets`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/tasks/show.html.erb:5
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 611)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 3408)
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.5ms | Allocations: 4052)
+
+
+Started GET "/tasks/1/edit" for 138.28.156.57 at 2024-05-04 19:06:30 +0000
+Cannot render console from 138.28.156.57! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/tasks_controller.rb:25:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  [1m[36mBucket Load (0.2ms)[0m  [1m[34mSELECT `buckets`.* FROM `buckets` ORDER BY `buckets`.`name` ASC[0m
+  ↳ app/views/tasks/edit.html.erb:10
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 6.3ms | Allocations: 2205)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 4780)
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 0.5ms | Allocations: 5490)
+
+
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/ubuntu/COMP318/lab-3-baoti-learning-ibraheem/BaotiLearning/config/environment.rb:5)
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/ubuntu/COMP318/lab-3-baoti-learning-ibraheem/BaotiLearning/config/environment.rb:5)
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/ubuntu/COMP318/lab-3-baoti-learning-ibraheem/BaotiLearning/config/environment.rb:5)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('4970686224851430615', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+Migrating to Users (20240507161644)
+  [1m[36mActiveRecord::SchemaMigration Create (1.9ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20240507161644')[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('4970686224851430615')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m

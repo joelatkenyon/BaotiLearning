@@ -26,6 +26,12 @@
 			  <li class="nav-item">
 				<a class="nav-link active" aria-current="page" href="/courses/new">New Course</a>
 			  </li>
+	
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="/tasks">Tasks</a>
+			  </li>
+	
+
 			</ul>
       <form class="">
         <% if !user_signed_in? %>
@@ -41,14 +47,9 @@
 		</div>
 	  </nav>
 	</div>
-  <body>
-	  <div class="container">
-		<%= yield %>
-		<% flash.each do |type, msg| %>
-		  <div>
-			<%= msg %>
-		  </div>
-		<% end %>
-	  </div>
-  </body>
+<%= link_to "All Subjects", buckets_path%>
+<%= link_to "All Tasks", tasks_path%>
+<%= yield %>
+
 </html>
+
