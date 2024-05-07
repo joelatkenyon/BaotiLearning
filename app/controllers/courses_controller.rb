@@ -52,7 +52,7 @@ class CoursesController < ApplicationController
           current_user.save
           redirect_to course_path(@course)
         else
-          flash[:error] = "You are already enrolled in this course."
+          flash[:error] = "Insufficient balance to enroll in this course."
           redirect_to course_path(@course)
         end
     end
