@@ -1588,3 +1588,4 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 4023)
 
 
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/ubuntu/COMP318/lab-3-baoti-learning-ibraheem/BaotiLearning/config/environment.rb:5)
