@@ -1,5 +1,5 @@
-class AddBalanceToUsers < ActiveRecord::Migration[7.1]
+class AddBalanceToUsers < ActiveRecord::Migration[6.0]
   def change
-    add_column :users, :balance, :integer
+    add_column :users, :balance, :integer, default: 1000
   end
 end
