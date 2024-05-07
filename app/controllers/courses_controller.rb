@@ -47,9 +47,13 @@ class CoursesController < ApplicationController
     def enroll
         @course = Course.find(params[:id])
         @course.add_user(current_user, "student")
-        redirect_to course_path(@course)
-        current_user.balance -= @course.price
-        current_user.save
+        if current_user.balance >= @course.price
+          current_user.balance -= @course.price
+          current_user.save
+          redirect_to course_path(@course)
+        else
+          flash[:error] = "Insufficient balance to purchase this course."
+        end
     end
 
     private
