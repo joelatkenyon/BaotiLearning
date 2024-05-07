@@ -22,4 +22,6 @@ Rails.application.routes.draw do
   end
   
   get 'courses/:id/enroll', to: 'courses#enroll', as: :enroll
+
+    post 'payments/purchase_course', to: 'payments#purchase_course', as: 'purchase_course'
 end
