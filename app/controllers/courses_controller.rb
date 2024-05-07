@@ -48,6 +48,8 @@ class CoursesController < ApplicationController
         @course = Course.find(params[:id])
         @course.add_user(current_user, "student")
         redirect_to course_path(@course)
+        current_user.balance -= course.price
+        current_user.save
     end
 
     private
