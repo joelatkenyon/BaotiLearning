@@ -6,11 +6,17 @@
 <% unless current_user_role == nil %>
   <% if @course.sections.any? %>
     <h2>Sections</h2>
-  <% end %>
-  <% @course.sections.each do |section| %>
-    <h4>
-      <%= section.title %>
-    </h4>
+    <% @course.sections.each do |section| %>
+      <h4><%= section.title %></h4>
+      <% case section.content_type %>
+        <% when 'text' %>
+          <p><%= section.content %></p>
+        <% when 'image' %>
+          <%= image_tag section.content %>
+        <% when 'video' %>
+          <%= video_tag section.content %>
+      <% end %>
+    <% end %>
   <% end %>
 
   <% if current_user_role == "instructor" %>
@@ -19,6 +25,14 @@
       <p>
         <%= form.label :title %><br>
         <%= form.text_field :title %>
+      </p>
+      <p>
+        <%= form.label :content_type %><br>
+        <%= form.select :content_type, Section.content_types.keys %>
+      </p>
+      <p>
+        <%= form.label :content %><br>
+        <%= form.text_area :content %>
       </p>
       <p>
         <%= form.submit %>
@@ -34,7 +48,6 @@
 
   <% if @course.check_user_role(current_user) == "instructor" %>
     <li><%= link_to "Edit", edit_course_path(@course) %></li>
-
     <li><%= link_to "Destroy", course_path(@course), data: {
                       turbo_method: :delete,
                       turbo_confirm: "Are you sure?"
