@@ -46,12 +46,13 @@ class CoursesController < ApplicationController
 
     def enroll
         @course = Course.find(params[:id])
-        @course.add_user(current_user, "student")
         if current_user.balance >= @course.price
+         @course.add_user(current_user, "student")
           current_user.balance -= @course.price
           current_user.save
           redirect_to course_path(@course)
         else
+          flash[:error] = "You are already enrolled in this course."
           redirect_to course_path(@course)
         end
     end
