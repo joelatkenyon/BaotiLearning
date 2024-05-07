@@ -52,7 +52,7 @@ class CoursesController < ApplicationController
           current_user.save
           redirect_to course_path(@course)
         else
-          flash[:error] = "Insufficient balance to purchase this course."
+            render :edit, status: :unprocessable_entity
         end
     end
 
