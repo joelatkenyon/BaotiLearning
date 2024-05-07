@@ -5,11 +5,13 @@
 
     <li>
       <a href="<%= course_path(course) %>">
-        <%= course.title %> <%= course.description %> <%= course.price %>
+        <%= course.title %>, <%= course.price %>
       </a>
     </li>
 
   <% end %>
 </ul>
 
-<%= link_to "New Course", new_course_path %>
+<% unless current_user == nil %>
+  <%= link_to "New Course", new_course_path %>
+<% end %>

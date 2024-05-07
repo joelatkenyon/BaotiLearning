@@ -1,6 +1,7 @@
 class CoursesController < ApplicationController
     before_action :authenticate_user!, except: [:index, :show]
-    before_action :is_instructor?, only: [:edit, :update, :destroy]
+    before_action :require_instructor!, only: [:edit, :update, :destroy]
+    before_action :require_unenrolled!, only: [:enroll]
 
     def index
         @courses = Course.all
@@ -17,8 +18,8 @@ class CoursesController < ApplicationController
     def create
         @course = Course.new(course_params)
         if @course.save
-            @course.enrollments.create(user: current_user, role: "instructor")
-            redirect_to @course
+            @course.add_user(current_user, "instructor")
+            redirect_to course_path(@course)
         else
             render :new, status: :unprocessable_entity
         end
@@ -31,7 +32,7 @@ class CoursesController < ApplicationController
     def update
         @course = Course.find(params[:id])
         if @course.update(course_params)
-            redirect_to @course
+            redirect_to course_path(@course)
         else
             render :edit, status: :unprocessable_entity
         end
@@ -43,17 +44,30 @@ class CoursesController < ApplicationController
         redirect_to root_path, status: :see_other
     end
 
+    def enroll
+        @course = Course.find(params[:id])
+        @course.add_user(current_user, "student")
+        redirect_to course_path(@course)
+    end
+
     private
         def course_params
             params.require(:course).permit(:title, :description, :price, :start_date, :end_date)
         end
 
-        def is_instructor?
+        def require_instructor!
             @course = Course.find(params[:id])
-            instructor_id_array = @course.enrollments.where(role: "instructor").pluck(:user_id)
-            unless instructor_id_array.include? current_user.id
-                flash[:error] = "You must be an instructor of this course to proceed."
-                redirect_to @course
+            unless @course.check_user_role(current_user) == "instructor"
+                flash[:error] = "You must be an instructor of this course to continue."
+                redirect_to course_path(@course)
+            end
+        end
+
+        def require_unenrolled!
+            @course = Course.find(params[:id])
+            unless @course.check_user_role(current_user) == nil
+                flash[:error] = "You are already enrolled in this course."
+                redirect_to course_path(@course)
             end
         end
 end
