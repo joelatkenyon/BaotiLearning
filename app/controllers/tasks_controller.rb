@@ -67,4 +67,3 @@ class SectionsController < ApplicationController
     end
 end
 
-edit so that tasks are specified for each user
