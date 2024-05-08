@@ -1,0 +1,23 @@
+<h1>Edit Course</h1>
+
+<%= form_with model: [@assignment.section.course, @assignment.section, @assignment] do |form| %>
+  <p>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </p>
+  <p>
+    <%= form.label :description %><br>
+    <%= form.text_area :description %>
+  </p>
+  <p>
+    <%= form.label :opendate %><br>
+    <%= form.datetime_local_field :opendate %>
+  </p>
+  <p>
+    <%= form.label :closedate %><br>
+    <%= form.datetime_local_field :closedate %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
