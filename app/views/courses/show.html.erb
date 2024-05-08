@@ -1,6 +1,10 @@
+<%= link_to "Return to all courses", root_path %>
+
 <h1><%= @course.title %></h1>
 <p><%= @course.description %></p>
 <p>Price: <%= @course.price %></p>
+<p>Starts on: <%= @course.start_date %></p>
+<p>Ends on: <%= @course.end_date %></p>
 
 <% current_user_role = @course.check_user_role(current_user) %>
 <% unless current_user_role == nil %>
@@ -39,7 +43,7 @@
 <% end %>
 
 <ul>
-  <% if current_user != nil && current_user_role == nil %>
+  <% if current_user != nil && current_user_role == nil && @course.start_date > DateTime.current%>
     <li><%= link_to "Enroll", enroll_path(@course)%></li>
   <% end %>
 

@@ -1,7 +1,9 @@
+<%= link_to "Return to course page", course_path(@assignment.section.course) %>
+
 <h1><%= @assignment.title %></h1>
 <p><%= @assignment.description %></p>
-<p>Opendate: <%= @assignment.opendate %></p>
-<p>Closedate: <%= @assignment.closedate %></p>
+<p>Open Date: <%= @assignment.opendate %></p>
+<p>Close Date: <%= @assignment.closedate %></p>
 
 <ul>
     <% current_user_role = @assignment.section.course.check_user_role(current_user) %>

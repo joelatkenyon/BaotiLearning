@@ -2,6 +2,7 @@ class CoursesController < ApplicationController
     before_action :authenticate_user!, except: [:index, :show]
     before_action :require_instructor!, only: [:edit, :update, :destroy]
     before_action :require_unenrolled!, only: [:enroll]
+    before_action :require_has_not_started!, only: [:enroll]
 
     def index
         @courses = Course.all
@@ -53,6 +54,14 @@ class CoursesController < ApplicationController
     private
         def course_params
             params.require(:course).permit(:title, :description, :price, :start_date, :end_date)
+        end
+
+        def require_has_not_started!
+            @course = Course.find(params[:id])
+            unless @course.start_date > DateTime.current
+                flash[:error] = "You cannot enroll in a course that has already started."
+                redirect_to course_path(@course)
+            end
         end
 
         def require_instructor!
