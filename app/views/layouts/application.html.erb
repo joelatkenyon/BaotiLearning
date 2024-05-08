@@ -52,6 +52,11 @@
 		<%= link_to "All Subjects", buckets_path%>
 		<%= link_to "All Tasks", tasks_path%>
 	  	<%= yield %>
+		<% flash.each do |type, msg| %>
+		  <div>
+		    <%= msg %>
+		  </div>
+		<% end %>
 	  </div>
 	</body>
 

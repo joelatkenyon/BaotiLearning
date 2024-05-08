@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyText
+  opendate: 2024-05-08 16:22:16
+  closedate: 2024-05-08 16:22:16
+  section: one
+
+two:
+  title: MyString
+  description: MyText
+  opendate: 2024-05-08 16:22:16
+  closedate: 2024-05-08 16:22:16
+  section: two

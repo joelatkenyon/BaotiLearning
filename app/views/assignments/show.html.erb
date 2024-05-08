@@ -1,0 +1,16 @@
+<h1><%= @assignment.title %></h1>
+<p><%= @assignment.description %></p>
+<p>Opendate: <%= @assignment.opendate %></p>
+<p>Closedate: <%= @assignment.closedate %></p>
+
+<ul>
+    <% current_user_role = @assignment.section.course.check_user_role(current_user) %>
+    <% if current_user_role == "instructor" %>
+      <li><%= link_to "Edit Assignment", edit_course_section_assignment_path(@assignment.section.course, @assignment.section, @assignment) %></li>
+
+      <li><%= link_to "Destroy Assignment", [@assignment.section.course, @assignment.section, @assignment], data: {
+                        turbo_method: :delete,
+                        turbo_confirm: "Are you sure?"
+                      } %></li>
+    <% end %>
+</ul>
