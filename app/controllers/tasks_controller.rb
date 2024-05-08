@@ -1,57 +1,70 @@
 class TasksController < ApplicationController
-  before_action :set_user_task, only: [:index, :new, :create]
-  before_action :set_task, only: [:show, :edit, :update, :destroy]
+    def index
+        @pending_tasks = Task.get_by_status("Pending")
+        @completed_tasks = Task.get_by_status("Completed")
+    end
 
-  def index
-    @pending_tasks = @user.tasks.where(status: "Pending")
-    @completed_tasks = @user.tasks.where(status: "Completed")
-  end
+    def new
+        @task = Task.new
+    end
 
-  def new
-    @task = @user.tasks.build
-  end
+    def create
+        @task = Task.create(task_params(:name, :description, :bucket_id))
+        @task.status = "Pending"
+        @task.save
+        @task.bucket.update_status
+        redirect_to task_path(@task)
+    end
+
+    def show
+        @task = Task.find(params[:id])
+    end
+
+    def edit
+        @task = Task.find(params[:id])
+    end
+
+    def update
+        @task = Task.find(params[:id])
+        @task.update(task_params(:name, :description, :status, :bucket_id))
+        @bucket = @task.bucket.update_status
+        redirect_to task_path(@task)
+    end
+
+    def destroy
+        @task = Task.find(params[:id]).destroy
+        redirect_to tasks_path
+    end
+
+    private
+    def task_params(*args)
+        params.require(:task).permit(*args)
+    end
+end
+
+according to this:
+
+class SectionsController < ApplicationController
+  before_action :require_instructor!
 
   def create
-    @task = @user.tasks.build(task_params)
-    @task.status = "Pending"
-    if @task.save
-      @task.bucket.update_status
-      redirect_to task_path(@task)
-    else
-      render :new
-    end
-  end
-
-  def show
-  end
-
-  def edit
-  end
-
-  def update
-    if @task.update(task_params)
-      @task.bucket.update_status
-      redirect_to task_path(@task)
-    else
-      render :edit
-    end
-  end
-
-  def destroy
-    @task.destroy
-    redirect_to tasks_path
+    @course = Course.find(params[:course_id])
+    @section = @course.sections.create(section_params)
+    redirect_to course_path(@course)
   end
 
   private
-    def set_user_task
-      @user = User.find(params[:user_id])
+    def section_params
+      params.require(:section).permit(:title)
     end
 
-    def set_task
-      @task = Task.find(params[:id])
-    end
-
-    def task_params
-      params.require(:task).permit(:name, :description, :status, :bucket_id)
+    def require_instructor!
+        @course = Course.find(params[:course_id])
+        unless @course.check_user_role(current_user) == "instructor"
+            flash[:error] = "You must be an instructor of this course to continue."
+            redirect_to course_path(@course)
+        end
     end
 end
+
+edit so that tasks are specified for each user
