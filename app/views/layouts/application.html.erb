@@ -47,8 +47,8 @@
 		</div>
 	  </nav>
 	</div>
-<%= link_to "All Subjects", buckets_path%>
-<%= link_to "All Tasks", tasks_path%>
+<%= link_to "Your Buckets", user_buckets_path(current_user) %>
+<%= link_to "All Tasks", user_tasks_path(current_user) %>
 <% if current_user %>
   <p>Your current balance: $<%= current_user.balance %></p>
 <% end %>
