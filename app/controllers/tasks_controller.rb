@@ -1,44 +1,57 @@
-
 class TasksController < ApplicationController
-    def index
-        @pending_tasks = Task.get_by_status("Pending")
-        @completed_tasks = Task.get_by_status("Completed")
+  before_action :set_user_task, only: [:index, :new, :create]
+  before_action :set_task, only: [:show, :edit, :update, :destroy]
+
+  def index
+    @pending_tasks = @user.tasks.where(status: "Pending")
+    @completed_tasks = @user.tasks.where(status: "Completed")
+  end
+
+  def new
+    @task = @user.tasks.build
+  end
+
+  def create
+    @task = @user.tasks.build(task_params)
+    @task.status = "Pending"
+    if @task.save
+      @task.bucket.update_status
+      redirect_to task_path(@task)
+    else
+      render :new
+    end
+  end
+
+  def show
+  end
+
+  def edit
+  end
+
+  def update
+    if @task.update(task_params)
+      @task.bucket.update_status
+      redirect_to task_path(@task)
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    @task.destroy
+    redirect_to tasks_path
+  end
+
+  private
+    def set_user_task
+      @user = User.find(params[:user_id])
     end
 
-    def new
-        @task = Task.new
+    def set_task
+      @task = Task.find(params[:id])
     end
 
-    def create
-        @task = Task.create(task_params(:name, :description, :bucket_id))
-        @task.status = "Pending"
-        @task.save
-        @task.bucket.update_status
-        redirect_to task_path(@task)
-    end
-
-    def show
-        @task = Task.find(params[:id])
-    end
-
-    def edit
-        @task = Task.find(params[:id])
-    end
-
-    def update
-        @task = Task.find(params[:id])
-        @task.update(task_params(:name, :description, :status, :bucket_id))
-        @bucket = @task.bucket.update_status
-        redirect_to task_path(@task)
-    end
-
-    def destroy
-        @task = Task.find(params[:id]).destroy
-        redirect_to tasks_path
-    end
-
-    private
-    def task_params(*args)
-        params.require(:task).permit(*args)
+    def task_params
+      params.require(:task).permit(:name, :description, :status, :bucket_id)
     end
 end
