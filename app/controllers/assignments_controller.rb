@@ -44,7 +44,7 @@ class AssignmentsController < ApplicationController
     @section = @course.sections.find(params[:section_id])
     @assignment = @section.assignments.find(params[:id])
     @assignment.destroy
-    redirect_to course_path(@course)
+    redirect_to course_path(@course), status: :see_other
   end
 
   private

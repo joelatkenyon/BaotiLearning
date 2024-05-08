@@ -7,6 +7,13 @@ class SectionsController < ApplicationController
     redirect_to course_path(@course)
   end
 
+  def destroy
+    @course = Course.find(params[:course_id])
+    @section = @course.sections.find(params[:id])
+    @section.destroy
+    redirect_to course_path(@course), status: :see_other
+  end
+
   private
     def section_params
       params.require(:section).permit(:title)

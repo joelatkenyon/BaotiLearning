@@ -17,6 +17,10 @@
     <% end %>
     <% if current_user_role == "instructor" %>
       <%= link_to "Add Assignment", new_course_section_assignment_path(:course_id => @course.id, :section_id => section.id) %>
+      <%= link_to "Destroy Section", [section.course, section], data: {
+                  turbo_method: :delete,
+                  turbo_confirm: "Are you sure?"
+                } %>
     <% end %>
   <% end %>
 

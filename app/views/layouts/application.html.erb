@@ -21,12 +21,8 @@
 		  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 			  <li class="nav-item">
-				<a class="nav-link active" aria-current="page" href="/courses">Courses</a>
+				<a class="nav-link active" aria-current="page" href="/buckets">Subjects</a>
 			  </li>
-			  <li class="nav-item">
-				<a class="nav-link active" aria-current="page" href="/courses/new">New Course</a>
-			  </li>
-	
 			  <li class="nav-item">
 				<a class="nav-link active" aria-current="page" href="/tasks">Tasks</a>
 			  </li>
@@ -49,8 +45,6 @@
 	</div>
 	<body>
 	  <div class="container">
-		<%= link_to "All Subjects", buckets_path%>
-		<%= link_to "All Tasks", tasks_path%>
 	  	<%= yield %>
 		<% flash.each do |type, msg| %>
 		  <div>

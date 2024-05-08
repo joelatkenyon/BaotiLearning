@@ -6,7 +6,7 @@ class Course < ApplicationRecord
     validates :title, presence: true
     validates :description, presence: true
     validates :price, presence: true, comparison: {greater_than_or_equal_to: 0}
-    validates :start_date, presence: true, comparison: {greater_than: DateTime.current}
+    validates :start_date, presence: true
     validates :end_date, presence: true, comparison: {greater_than: :start_date}
 
     def add_user(new_user, new_role)
