@@ -21,11 +21,11 @@
   </ul>
 <% end %>
 
-<% if Course.where("start_date <= ?", DateTime.current).any? %>
+<% if Course.where("start_date <= ?", DateTime.current).any? && Course.where("end_date > ?", DateTime.current).any? %>
   <h3>In-Progress</h3>
   <ul>
     <% @courses.each do |course| %>
-      <% if course.start_date <= DateTime.current %>
+      <% if course.start_date <= DateTime.current && course.end_date > DateTime.current %>
         <li><%= link_to "#{course.title}", course_path(course) %></li>
       <% end %>
     <% end %>
