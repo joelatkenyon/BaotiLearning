@@ -1,6 +1,6 @@
 # BaotiLearning
 ## Installation
-To install and run the app, simply clone the project onto your machine. Then run:
+To install and run the app, simply clone the project onto your machine. Make sure your machine has Ruby, Ruby on Rails, and MarieDB set up. Then run:
 ```
 rails s -b 0.0.0.0 -p 3001
 ```
