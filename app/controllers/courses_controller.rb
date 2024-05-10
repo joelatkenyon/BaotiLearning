@@ -1,7 +1,13 @@
 class CoursesController < ApplicationController
+    # Require login to do anything other than view list of courses and
+    # to see the basic overview of the course, i.e. no sections
     before_action :authenticate_user!, except: [:index, :show]
+    # Require instructor of course to edit or destroy the course
     before_action :require_instructor!, only: [:edit, :update, :destroy]
+    # Prevent enrolled people from enrolling again
+    # and creating a duplicate enrollment
     before_action :require_unenrolled!, only: [:enroll]
+    # Prevent enrollment after the course has started
     before_action :require_has_not_started!, only: [:enroll]
 
     def index
@@ -56,6 +62,8 @@ class CoursesController < ApplicationController
             params.require(:course).permit(:title, :description, :price, :start_date, :end_date)
         end
 
+        # Makes sure that the course has not started, i.e. that the
+        # current date and time is before the course start date and time
         def require_has_not_started!
             @course = Course.find(params[:id])
             unless @course.start_date > DateTime.current
@@ -64,6 +72,7 @@ class CoursesController < ApplicationController
             end
         end
 
+        # Makes sure that the current user is an instructor of the course
         def require_instructor!
             @course = Course.find(params[:id])
             unless @course.check_user_role(current_user) == "instructor"
@@ -72,6 +81,7 @@ class CoursesController < ApplicationController
             end
         end
 
+        # Makes sure that the current user is not enrolled in the course
         def require_unenrolled!
             @course = Course.find(params[:id])
             unless @course.check_user_role(current_user) == nil

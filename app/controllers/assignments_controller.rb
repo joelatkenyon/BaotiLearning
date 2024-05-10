@@ -1,7 +1,13 @@
 class AssignmentsController < ApplicationController
+  # Require user to do anything with a course's assignments
   before_action :authenticate_user!
+  # Require enrolled user to do anything with a course's assignments
   before_action :require_enrolled!
+  # Require instructor to edit or destroy the course; differs from
+  # off_page in that it finds an assignment to manipulate
   before_action :require_instructor_on_page!, only: [:edit, :update, :destroy]
+  # Require instructor to make a new course; differs from
+  # on_page in that it does not find an assignment to manipulate
   before_action :require_instructor_off_page!, only: [:new, :create]
 
   def show
@@ -52,6 +58,7 @@ class AssignmentsController < ApplicationController
       params.require(:assignment).permit(:title, :description, :opendate, :closedate)
     end
 
+    # Require the current user to be enrolled
     def require_enrolled!
       @course = Course.find(params[:course_id])
       if @course.check_user_role(current_user) == nil
@@ -60,6 +67,8 @@ class AssignmentsController < ApplicationController
       end
     end
 
+    # Require the current user to be an instructor and
+    # finds an existing assignment to manipulate
     def require_instructor_on_page!
       @course = Course.find(params[:course_id])
       @section = @course.sections.find(params[:section_id])
@@ -70,6 +79,8 @@ class AssignmentsController < ApplicationController
       end
     end
 
+    # Require the current user to be an instructor and
+    # makes a new assignment under the section
     def require_instructor_off_page!
       @course = Course.find(params[:course_id])
       unless @course.check_user_role(current_user) == "instructor"

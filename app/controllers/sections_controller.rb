@@ -1,4 +1,5 @@
 class SectionsController < ApplicationController
+  # Prevent manipulating sections unless you are an instructor
   before_action :require_instructor!
 
   def create
@@ -19,6 +20,8 @@ class SectionsController < ApplicationController
       params.require(:section).permit(:title)
     end
 
+    # Makes sure that the current user is an instructor
+    # of the course to which the section belongs
     def require_instructor!
         @course = Course.find(params[:course_id])
         unless @course.check_user_role(current_user) == "instructor"

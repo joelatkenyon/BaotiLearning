@@ -15,12 +15,15 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
 
+  # Set root to courses index since it's the main feature of our app
   root "courses#index"
+  # Triple nest resources to create the desired database hierarchy
   resources :courses do
     resources :sections do
       resources :assignments
     end
   end
   
+  # Route a non-RESTful route, enroll
   get 'courses/:id/enroll', to: 'courses#enroll', as: :enroll
 end
